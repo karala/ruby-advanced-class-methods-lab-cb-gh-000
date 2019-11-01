@@ -5,7 +5,7 @@ class Song
   def self.create
     @name = name
     @@all << self
-    save!
+    save
   end
 
   def self.all
