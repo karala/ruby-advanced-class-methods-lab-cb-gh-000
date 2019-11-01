@@ -29,9 +29,7 @@ class Song
   end
 
   def self.find_by_name(song_name)
-    array = Array.new
-    array = @@all
-    array.include?(song_name)
+    self.all.detect{|s| s.name = song_name}
   end
 
 end
